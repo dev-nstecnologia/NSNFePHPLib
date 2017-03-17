@@ -22,7 +22,7 @@ class VeicProd {
     public $tpPint;
     public $tpVeic;
     public $espVeic;
-    public $vin;
+    public $VIN;
     public $condVeic;
     public $cMod;
     public $cCorDENATRAN;

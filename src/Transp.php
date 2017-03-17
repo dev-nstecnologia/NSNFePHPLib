@@ -2,6 +2,11 @@
 
 namespace br\ns\newssystems\NFe\struct;
 
+require 'Transporta.php';
+require 'RetTransp.php';
+require 'TVeiculo.php';
+require 'Vol.php';
+
 class Transp {
 
     public $modFrete;
