@@ -3,7 +3,7 @@
 	$nfe = $_POST['conteudoEnviar'];
 	$CNPJEmitente = $_POST['CNPJ'];
 
-	$NFeAPI = new NFeAPI(2);
+	$NFeAPI = new NFeAPI();
 
 	$retorno = $NFeAPI->emitirNFeSincrono($token, $CNPJEmitente, $nfe);
 	print_r($retorno);

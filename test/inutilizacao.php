@@ -9,7 +9,7 @@
     $nCTFin = 10148;
     $xJust = "teste para api nsnfe";
 
-	$NFeAPI = new NFeAPI(2);
+	$NFeAPI = new NFeAPI();
 
 	$retorno = $NFeAPI->inutilizaNFe($token, $cUF, $tpAmb, $ano, $CNPJEmitente, $serie, $nCTIni, $nCTFin, $xJust);
 	print_r($retorno);

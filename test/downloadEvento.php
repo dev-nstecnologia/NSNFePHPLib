@@ -5,7 +5,7 @@
     $tpEvento = "CCE";
     $nSeqEvento = 1;
 
-	$NFeAPI = new NFeAPI(2);
+	$NFeAPI = new NFeAPI();
 
 	$retorno = $NFeAPI->downloadEventoNFe($token, $chNFe, $tpDown, $tpEvento, $nSeqEvento);
 	print_r($retorno);

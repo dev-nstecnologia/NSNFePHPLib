@@ -6,7 +6,7 @@
     $nProt = "143160001538533";
     $xJust = "teste para api nsnfe";
     
-	$NFeAPI = new NFeAPI(2);
+	$NFeAPI = new NFeAPI();
 
 	$retorno = $NFeAPI->cancelaNFe($token, $chNFe, $tpAmb, $dhEvento, $nProt, $xJust);
 	print_r($retorno);

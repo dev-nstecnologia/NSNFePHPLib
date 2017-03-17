@@ -6,7 +6,7 @@
     $nSeqEvento = 1;
     $xCorrecao = "teste para api nsnfe";
 
-	$NFeAPI = new NFeAPI(2);
+	$NFeAPI = new NFeAPI();
 
 	$retorno = $NFeAPI->cceNFe($token, $chNFe, $tpAmb, $dhEvento, $nSeqEvento, $xCorrecao);
 	print_r($retorno);
