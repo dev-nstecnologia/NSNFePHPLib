@@ -2,6 +2,12 @@
 
 namespace br\ns\newssystems\NFe\struct;
 
+require 'VeicProd.php';
+require 'Med.php';
+require 'Arma.php';
+require 'Comb.php';
+require 'DI.php';
+
 class Prod {
 
     public $cProd;

@@ -1,7 +1,10 @@
 <?php
 
 namespace br\ns\newssystems\NFe\struct;
+require "PISAliq.php";
+require "PISQtde.php";
 require "PISNT.php";
+require "PISOutr.php";
 
 class PIS {
 

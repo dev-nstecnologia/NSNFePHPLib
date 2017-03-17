@@ -2,9 +2,14 @@
 
 namespace br\ns\newssystems\NFe\struct;
 require "ICMS.php";
+require "II.php";
 require "IPI.php";
+require "ISSQN.php";
 require "PIS.php";
+require "PISST.php";
 require "COFINS.php";
+require "COFINSST.php";
+require "ICMSUFDest.php";
 
 
 class Imposto {

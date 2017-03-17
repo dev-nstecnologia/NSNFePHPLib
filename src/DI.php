@@ -2,6 +2,8 @@
 
 namespace br\ns\newssystems\nfe\struct;
 
+require "Adi.php";
+
 class DI {
 
     public $nDI;

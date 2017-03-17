@@ -12,33 +12,18 @@ class NFeAPI{
 	private $urlPreviaNFe;
 	
 
-	public function __construct($tpAmb){
+	public function __construct(){
 		//Passa os urls das operações
-		if($tpAmb == 1){
-			$this->urlEnvioNFe = "https://nfe.ns.eti.br/nfe/issue";
-			$this->urlStatusProcessamento = "https://nfe.ns.eti.br/nfe/issue/status";
-			$this->urlDownloadNFe = "https://nfe.ns.eti.br/nfe/get";
-			$this->urlDownloadEventoNFe = "https://nfe.ns.eti.br/nfe/get/event";
-			$this->urlCancelamentoNFe = "https://nfe.ns.eti.br/nfe/cancel";
-			$this->urlConsultaSituacaoNFe = "https://nfe.ns.eti.br/nfe/stats";
-			$this->urlCCeNFe = "https://nfe.ns.eti.br/nfe/cce";
-			$this->urlInutilizaNFe = "https://nfe.ns.eti.br/nfe/inut";
-			$this->urlConsultaCadastroContribuinte = "https://nfe.ns.eti.br/util/conscad";
-			$this->urlPreviaNFe = "https://nfe.ns.eti.br/util/preview/nfe";
-		}
-		else{
-			$this->urlEnvioNFe = "http://nfehml.ns.eti.br/nfe/issue";
-			$this->urlStatusProcessamento = "http://nfehml.ns.eti.br/nfe/issue/status";
-			$this->urlDownloadNFe = "http://nfehml.ns.eti.br/nfe/get";
-			$this->urlDownloadEventoNFe = "http://nfehml.ns.eti.br/nfe/get/event";
-			$this->urlCancelamentoNFe = "http://nfehml.ns.eti.br/nfe/cancel";
-			$this->urlConsultaSituacaoNFe = "http://nfehml.ns.eti.br/nfe/stats";
-			$this->urlCCeNFe = "http://nfehml.ns.eti.br/nfe/cce";
-			$this->urlInutilizaNFe = "http://nfehml.ns.eti.br/nfe/inut";
-			$this->urlConsultaCadastroContribuinte = "http://nfehml.ns.eti.br/util/conscad";
-			$this->urlPreviaNFe = "http://nfehml.ns.eti.br/util/preview/nfe";
-
-		}
+		$this->urlEnvioNFe = "https://nfe.ns.eti.br/nfe/issue";
+		$this->urlStatusProcessamento = "https://nfe.ns.eti.br/nfe/issue/status";
+		$this->urlDownloadNFe = "https://nfe.ns.eti.br/nfe/get";
+		$this->urlDownloadEventoNFe = "https://nfe.ns.eti.br/nfe/get/event";
+		$this->urlCancelamentoNFe = "https://nfe.ns.eti.br/nfe/cancel";
+		$this->urlConsultaSituacaoNFe = "https://nfe.ns.eti.br/nfe/stats";
+		$this->urlCCeNFe = "https://nfe.ns.eti.br/nfe/cce";
+		$this->urlInutilizaNFe = "https://nfe.ns.eti.br/nfe/inut";
+		$this->urlConsultaCadastroContribuinte = "https://nfe.ns.eti.br/util/conscad";
+		$this->urlPreviaNFe = "https://nfe.ns.eti.br/util/preview/nfe";
 	}
 
 	public function emitirNFeSincrono($token, $CNPJEmit, $nfe, $tpDown = 'x'){

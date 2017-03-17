@@ -7,6 +7,7 @@ require "Dest.php";
 require "Det.php";
 require "Total.php";
 require "Transp.php";
+require "Exporta.php";
 
 class InfNFe {
 

@@ -1,7 +1,10 @@
 <?php
 
 namespace br\ns\newssystems\nfe\struct;
+require "COFINSAliq.php";
+require "COFINSQtde.php";
 require "COFINSNT.php";
+require "COFINSOutr.php";
 
 class COFINS {
 

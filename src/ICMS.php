@@ -1,7 +1,24 @@
 <?php
 
 namespace br\ns\newssySTems\nfe\STruct;
+require "ICMS00.php";
+require "ICMS10.php";
+require "ICMS20.php";
+require "ICMS30.php";
+require "ICMS40.php";
+require "ICMS51.php";
+require "ICMS60.php";
+require "ICMS70.php";
+require "ICMS90.php";
+require "ICMSPart.php";
+require "ICMSST.php";
+require "ICMSSN101.php";
+require "ICMSSN102.php";
+require "ICMSSN201.php";
+require "ICMSSN202.php";
 require "ICMSSN500.php";
+require "ICMSSN900.php";
+
 
 class ICMS {
 
