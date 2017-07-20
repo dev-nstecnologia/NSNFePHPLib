@@ -8,6 +8,6 @@
     
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->cancelaNFe($token, $chNFe, $tpAmb, $dhEvento, $nProt, $xJust);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->cancelaNFe($token, $chNFe, $tpAmb, $dhEvento, $nProt, $xJust);
+
 ?>

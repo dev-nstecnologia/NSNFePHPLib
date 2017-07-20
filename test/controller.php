@@ -3,6 +3,8 @@
 	ini_set('display_errors', 1);
 
 	include "../src/NFeAPI.php";
+	if(!isset($_SESSION)) session_start();
+	
 	if(isset($_POST['funcaoAPI']))
 		switch($_POST['funcaoAPI']){
 		    case 'emissao':

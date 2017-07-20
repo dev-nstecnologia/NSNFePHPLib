@@ -5,6 +5,6 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->consultaSituacaoNFe($token, $chNFe, $tpAmb);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->consultaSituacaoNFe($token, $chNFe, $tpAmb);
+
 ?>

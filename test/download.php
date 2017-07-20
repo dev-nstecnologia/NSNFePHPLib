@@ -1,10 +1,11 @@
 <?php
 	$token = $_POST['token'];
-	$chNFe = "43161207364617000135550000000099881000094837";
-    $tpDown = "X";
+	$chNFe = "43170707364617000135550010000108271000108108";
+    $tpAmb = "2";
+    $tpDown = "XP";
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->downloadNFe($token, $chNFe, $tpDown);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->downloadNFe($token, $chNFe, $tpAmb, $tpDown);
+
 ?>

@@ -11,6 +11,6 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->inutilizaNFe($token, $cUF, $tpAmb, $ano, $CNPJEmitente, $serie, $nCTIni, $nCTFin, $xJust);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->inutilizaNFe($token, $cUF, $tpAmb, $ano, $CNPJEmitente, $serie, $nCTIni, $nCTFin, $xJust);
+
 ?>

@@ -60,7 +60,9 @@ class NFeAPI{
 		} while ($counter < 3);
 
 		if($this->isCStatNFeAutorizada($retornoConsulta['cStat'])){
-			$retornoXml = $this->downloadNFe($token, $retornoConsulta['chNFe'], $tpDown);
+			$json = json_decode($nfe);
+			$tpAmb = $json->NFe->infNFe->ide->tpAmb;
+			$retornoXml = $this->downloadNFe($token, $retornoConsulta['chNFe'], $tpAmb, $tpDown);
 			
 			if (stripos($tpDown, 'x') !== false) $retornoConsulta['xml'] = $retornoXml['xml'];
 			if (stripos($tpDown, 'p') !== false) $retornoConsulta['pdf'] = $retornoXml['pdf'];
@@ -94,10 +96,11 @@ class NFeAPI{
 		return $result;
 	}
 
-	public function downloadNFe($token, $chNFe, $tpDown){
+	public function downloadNFe($token, $chNFe, $tpAmb = "2", $tpDown){
 		//Monta json
 		$json = '{"X-AUTH-TOKEN": "' . $token . '",
 				"chNFe": "' . $chNFe . '",
+				"tpAmb": "' . $tpAmb . '",
 				"tpDown": "' . $tpDown . '"
 		}';
 		

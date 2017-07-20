@@ -5,7 +5,6 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->emitirNFeSincrono($token, $CNPJEmitente, $nfe);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->emitirNFeSincrono($token, $CNPJEmitente, $nfe);
 
 ?>

@@ -7,6 +7,6 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->downloadEventoNFe($token, $chNFe, $tpDown, $tpEvento, $nSeqEvento);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->downloadEventoNFe($token, $chNFe, $tpDown, $tpEvento, $nSeqEvento);
+
 ?>

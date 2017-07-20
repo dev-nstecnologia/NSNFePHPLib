@@ -8,6 +8,5 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->cceNFe($token, $chNFe, $tpAmb, $dhEvento, $nSeqEvento, $xCorrecao);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->cceNFe($token, $chNFe, $tpAmb, $dhEvento, $nSeqEvento, $xCorrecao);
 ?>

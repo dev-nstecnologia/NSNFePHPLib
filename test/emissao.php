@@ -4,6 +4,6 @@
 
 	$NFeAPI = new NFeAPI();
 	
-	$retorno = $NFeAPI->emitirNFe($token, $conteudo);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->emitirNFe($token, $conteudo);
+
 ?>

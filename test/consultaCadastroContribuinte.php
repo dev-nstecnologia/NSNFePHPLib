@@ -7,6 +7,5 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->consultaCadastroContribuinte($token, $CNPJEmitente, $UF, $documentoConsulta, $tpConsulta);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->consultaCadastroContribuinte($token, $CNPJEmitente, $UF, $documentoConsulta, $tpConsulta);
 ?>

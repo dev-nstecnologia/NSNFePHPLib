@@ -4,6 +4,6 @@
 
 	$NFeAPI = new NFeAPI();
 
-	$retorno = $NFeAPI->previaNFe($token, $conteudo);
-	print_r($retorno);
+	$_SESSION['retornoAPI'] = $NFeAPI->previaNFe($token, $conteudo);
+
 ?>
