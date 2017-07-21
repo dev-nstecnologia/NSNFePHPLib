@@ -2,6 +2,9 @@
 
 namespace br\ns\newssystems\nfe\struct;
 
+require 'Dup.php';
+require 'Fat.php';
+
 class Cobr {
 
     public $fat;

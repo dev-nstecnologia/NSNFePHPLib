@@ -2,19 +2,20 @@
 
 namespace br\ns\newssystems\NFe\struct;
 require "IPINT.php";
+require "IPITrib.php";
 
 class IPI {
 
-    //public $vIPIdevol;
     public $IPINT;
+    public $IPITrib;
     public $cEnq;
 
-    function getvIPIdevol() {
-        return $this->vIPIdevol;
+    function getIPITrib() {
+        return $this->IPITrib;
     }
 
-    function setvIPIdevol($vIPIdevol) {
-        $this->vIPIdevol = $vIPIdevol;
+    function setIPITrib($IPITrib) {
+        $this->IPITrib = $IPITrib;
     }
 
     function getIPINT() {

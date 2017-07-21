@@ -8,6 +8,8 @@ require "Det.php";
 require "Total.php";
 require "Transp.php";
 require "Exporta.php";
+require "Cobr.php";
+require "InfAdic.php";
 
 class InfNFe {
 
