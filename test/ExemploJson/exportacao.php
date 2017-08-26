@@ -185,6 +185,6 @@ $infNFe->exporta = $exporta;
 $infNFe->versao = "3.10";
 $NFeProc->NFe->infNFe = $infNFe;
 
-echo json_encode((array)$NFeProc);
+echo $NFeProc->toJSON();
 
 ?>

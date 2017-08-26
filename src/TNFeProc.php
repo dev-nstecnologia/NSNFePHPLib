@@ -34,6 +34,6 @@ class TNFeProc {
     }
 
     function toJSON(){
-        return json_encode((array)$this);
+        return json_encode((array)$this, JSON_UNESCAPED_UNICODE);
     }
 }
