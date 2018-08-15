@@ -32,7 +32,7 @@ class NFeAPI{
 
 		$retornoConsulta = $result;
 
-		if(!($this->isStatusOK(200))) return $retornoConsulta;
+		if(!($this->isStatusOK($retornoConsulta['status']))) return $retornoConsulta;
 
 		$nsNRec = $retornoConsulta['nsNRec'];
 		$counter = 0;
